@@ -16,6 +16,7 @@ public class Publish {
 	private String pName;
 	private String pVersion;
 	private Date date= new Date();
+	
 	public Long getpId() {
 		return pId;
 	}
@@ -40,7 +41,17 @@ public class Publish {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+	public Publish(Long pId, String pName, String pVersion, Date date) {
+		super();
+		this.pId = pId;
+		this.pName = pName;
+		this.pVersion = pVersion;
+		this.date = date;
+	}
 	
+	public Publish() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 
