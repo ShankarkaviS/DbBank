@@ -16,6 +16,11 @@ public class PublishServiceImpl implements PublishService {
 	public Publish createPublish(Publish publish) {
 		return publishRepository.save(publish);
 	}
+
+	@Override
+	public Publish viewPublish() {
+		return publishRepository.viewPublish();
+	}
 	
 	
 	
